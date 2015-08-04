@@ -37,6 +37,8 @@ $('.dotarea').mouseenter(function(){
 		$(this).children('.dot').addClass('startDot');
 		console.log("added startdot Class");
 		//tell program now there's a startdot!
+		$('#canvas').append("<svg><line class=\"line\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"0\" /></svg>");
+		$('#canvas line:last-child').unwrap();
 		return startDotSet = true;
 		//if there IS a startdot already
 		} else {
@@ -87,17 +89,20 @@ $(document).click(function(){
 	$('#canvas').empty();
 });
 
+$(document).scroll(function(){
+	$('#canvas').attr('height', $(document).height());
+	$('#canvas').attr('width', $(document).width());
+});
 
-// //re-measure & print anytime the window is resized
-// $(window).resize(function(){
-// 	$('#grid').empty();
-// 	getBoxSize();
-// 	createBoxes();
-// 	$('#canvas').empty();
-// 	startDotSet = false;
-// 	endDotSet = false;
-// 	$('.dot').removeClass('startDot');
-// 	$('.dot').removeClass('endDot');
-// });
+$(window).resize(function(){
+	$('#canvas').empty();
+	$('#canvas').attr('height', $(document).height());
+	$('#canvas').attr('width', $(document).width());
+});
 
-
+//re-measure & print anytime the window is resized
+$(window).resize(function(){
+	$('#grid').empty();
+	getBoxSize();
+	createBoxes();
+});
