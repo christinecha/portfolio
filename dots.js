@@ -35,6 +35,7 @@ $('.dotarea').mouseenter(function(){
 	if (startDotSet === false) {
 		//name a startdot on mouseover
 		$(this).children('.dot').addClass('startDot');
+		$(this).children('.dot').addClass('visitedDot');
 		console.log("added startdot Class");
 		//tell program now there's a startdot!
 		$('#canvas').append("<svg><line class=\"line\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"0\" /></svg>");
@@ -44,6 +45,7 @@ $('.dotarea').mouseenter(function(){
 		} else {
 		//name a enddot on mouseover
 		$(this).children('.dot').addClass('endDot');
+		$(this).children('.dot').addClass('visitedDot');
 		console.log("added enddot Class");
 		//tell program now there's an enddot!
 		return endDotSet = true;
@@ -87,6 +89,7 @@ $(document).mousemove(function(){
 
 $(document).click(function(){
 	$('#canvas').empty();
+	$('.dot').removeClass('visitedDot');
 });
 
 $(document).scroll(function(){
@@ -100,9 +103,9 @@ $(window).resize(function(){
 	$('#canvas').attr('width', $(document).width());
 });
 
-//re-measure & print anytime the window is resized
-$(window).resize(function(){
-	$('#grid').empty();
-	getBoxSize();
-	createBoxes();
-});
+// //re-measure & print anytime the window is resized
+// $(window).resize(function(){
+// 	$('#grid').empty();
+// 	getBoxSize();
+// 	createBoxes();
+// });
