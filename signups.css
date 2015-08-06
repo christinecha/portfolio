@@ -3,7 +3,7 @@
 	height: 100%;
 	position: fixed;
 	z-index: -50;
-	background: url('field-01.png') no-repeat;
+	background: url('assets/field-01.png') no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 	background-position: bottom;
