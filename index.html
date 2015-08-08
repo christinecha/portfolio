@@ -3,6 +3,7 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!--FONTS-->
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css' />
@@ -11,32 +12,73 @@
 	<!--STYLESHEETS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="global.css" type="text/css" />
+	<link rel="stylesheet" href="css/global.css" type="text/css" />
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+
 
 	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.0/JSXTransformer.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>-->
 </head>
 
+
+
 <body>
-	<div class="background-index">
-	</div>
-	<svg id="canvas" width="100%" height="100%">
-    <line class="line original" x1="0" y1="0" x2="0" y2="0" />
-	</svg>
 	<div class="container-fluid">
+		<nav>
+			<ul>
+				<li class="left-nav">CHRISTINE CHA</li>
+				<a href="mailto:hello@christinecha.com" target="_blank"><li class="right-nav">hello@christinecha.com</li></a>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="container-fluid strip-header">
 		<div class="splash">
 			<h1>christine cha</h1>
-			<h2>building beautiful experiences, <a href="signups.html">online</a> and offline</h3>
+			<h2>building beautiful experiences, online and offline</h3>
 		</div>
 	</div>
-	<div id="grid">
+
+	<!--PROJECT SLIDESHOW-->
+	<div class="container-fluid">
+		<div class="prevArrow">
+			{
+		</div>
+		<div class="nextArrow">
+		}
+		</div>
+		<div class="projects">
+			<div class="slide">
+				<span class="slide-label">
+					<a href="http://christinecha.github.io/connect-the-dots/" target="_blank">CONNECT THE DOTS</a>
+				</span>
+				<img src="assets/slide_dots-01.png">
+			</div>
+			<div class="slide">
+				<span class="slide-label">
+					<a href="https://www.dropbox.com/s/0onzn2fin7mwk2v/Inksy%20Designs.zip?dl=0">INKSY.CO</a>
+				</span>
+				<img src="assets/slide_inksy.png">
+			</div>
+		</div>
 	</div>
-  <script src="dots.js"></script>
+
+<!--CONTACT-->
+	<!-- <div class="container-fluid">
+		<div class="col-xs-3 contact-picker">
+			
+		</div>
+		<div class="col-xs-9">
+			dod tot
+		</div>
+	</div> -->
+
+	<script type="text/javascript" src="scripts/index.js"></script>
 </body>
 
 </html>
