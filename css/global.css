@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('../assets/socicon/font/socicon.eot');
+    src: url('../assets/socicon/font/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../assets/socicon/font/socicon.woff') format('woff'),
+         url('../assets/socicon/font/socicon.ttf') format('truetype'),
+         url('../assets/socicon/font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+
+.socicon {
+    font-family: 'socicon' !important;
+}
+
 *:focus {
 	-o-outline: none;
 	outline-style:none;
@@ -28,13 +44,12 @@ h4 {
 }
 
 a {
-	color: #77eedd;
 	cursor: pointer;
 }
 
 a:hover, a:active, a:link, a::after {
-	color: #55ccbb;
 	text-decoration: none;
+	color: #888;
 }
 
 img {
@@ -59,12 +74,14 @@ nav ul {
 	list-style: none;
 }
 
-nav li {
+nav li, nav a {
 	display: inline-block;
+	color: #aaa;
 }
 
 .left-nav {
 	float: left;
+	margin-right: 10px;
 }
 
 .right-nav {
