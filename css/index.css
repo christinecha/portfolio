@@ -1,16 +1,16 @@
-.splash {
+.strip-header {
+	background-color: #f3f5f9;
 	text-align: center;
-	z-index: 50;
-	position: relative;
-  background-color: #fafafa;
-  margin: 150px 20%;
-  padding: 30px;
 }
 
-.splash h3 {
-	font-size: 20px;
-	font-weight: 700;
-	margin-top: 0;
+.strip-header img {
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.splash {
+	text-align: center;
+	margin-top: 200px;
 }
 
 .slide {

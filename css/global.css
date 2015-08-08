@@ -12,12 +12,13 @@ body {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 36px;
 	margin: 0;
 }
 
 h2 {
 	font-size: 16px;
+	line-height: 22px;
 	margin: 5px;
 }
 
