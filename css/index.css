@@ -19,18 +19,24 @@
   overflow: hidden;
   text-align: center;
   background-color: #eee;
+	position: relative;
 }
 
 .slide img {
-  margin-left: auto;
-  margin-right: auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-moz-transform: translateY(-50%) translateX(-50%);
+	-o-transform: translateY(-50%) translateX(-50%);
 }
 
 .slide-label {
   height: 100px;
   width: 100%;
-  position: absolute;
-  margin-top: 150px;
+  position: relative;
+	z-index: 99;
+	top: 45%;
 }
 
 .slide-label a {
@@ -54,6 +60,7 @@
   position: absolute;
   margin: 30px;
   z-index: 99;
+	cursor: pointer;
 }
 
 .prevArrow:hover, .nextArrow:hover {
