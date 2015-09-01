@@ -1,3 +1,4 @@
+//slideshow
 $('.projects').children().hide();
 $('.projects div').first().show().addClass('currentSlide');
 
@@ -23,4 +24,17 @@ $('.prevArrow').click(function(){
     $('.currentSlide').removeClass('currentSlide');
     $('.nextSlide').addClass('currentSlide');
     $('.slide').removeClass('nextSlide');
+});
+
+//choosing phrases for "good design is..." section
+var goodDesignIs = ["bold", "playful", "organized", "professional", "clean"];
+var index = 0;
+$('.good-design__textbox__dropdown').click(function(){
+  if (index < (goodDesignIs.length - 1)){
+    index+= 1;
+  } else {
+    index = 0;
+  }
+  $('.good-design__textbox__dropdown').html(goodDesignIs[index]);
+  console.log(index);
 });
