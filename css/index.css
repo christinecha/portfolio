@@ -1,3 +1,16 @@
+.good-design__textbox {
+	margin-top: 300px;
+	text-align: center;
+	margin-bottom: 300px;
+}
+
+.good-design__textbox__font { font-size: 40px; }
+
+.good-design__textbox__dropdown:-webkit-any-link {
+	border: none;
+	color: #ccc;
+}
+
 .strip-header {
 	background-color: #f3f5f9;
 	text-align: center;
