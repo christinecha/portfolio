@@ -23,7 +23,7 @@
 
 .splash {
 	text-align: center;
-	margin-top: 200px;
+	margin-top: 240px;
 }
 
 .slide {
@@ -51,6 +51,8 @@
 	z-index: 99;
 	top: 45%;
 }
+
+.slide-caption { z-index: 99; position: relative; background-color: white; top: 60%; padding: 10px; color: #888; }
 
 .slide-label a {
   color: #aaa;
