@@ -5,23 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--FONTS-->
-	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Work+Sans:100,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Work+Sans:100,300,700|Montserrat' rel='stylesheet' type='text/css' />
 
 	<!--STYLESHEETS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/global.css" type="text/css" />
-	<link rel="stylesheet" href="css/index.css" type="text/css" />
-
+	<link rel="stylesheet" href="css/index2.css" type="text/css" />
+	<link rel="stylesheet" href="css/dots.css" type="text/css" />
 
 	<!--SCRIPTS-->
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 </head>
-
-
 
 <body>
 	<div class="container-fluid">
@@ -36,119 +33,92 @@
 		</nav>
 	</div>
 
-	<!-- <div class="container-fluid good-design">
-		<div class="good-design__textbox">
-			<h2 class="good-design__textbox__font">
-				Good design is
-				<a class="good-design__textbox__dropdown">fun</a>
-			</h2>
-		</div>
-	</div> -->
+	<svg id="canvas" width="100%" height="100%">
+		<line class="line original" x1="0" y1="0" x2="0" y2="0" />
+	</svg>
 
-	<div class="container-fluid strip-header">
-		<div class="col-md-7 splash">
-			<img src="assets/aesthetic-letter1.png">
-			<img src="assets/aesthetic-letter2.png">
-			<img src="assets/aesthetic-letter3.png">
-			<br class="mobile-only">
-			<img src="assets/aesthetic-letter4.png">
-			<img src="assets/aesthetic-letter5.png">
-			<img src="assets/aesthetic-letter6.png">
-			<br class="mobile-only">
-			<img src="assets/aesthetic-letter7.png">
-			<img src="assets/aesthetic-letter8.png">
-			<img src="assets/aesthetic-letter9.png">
-			<br>
-			<h2>BY CHRISTINE CHA</h2>
+
+	<div class="block-1">
+		<div class="aesthetic">
+			<img src="assets/aesthetic-letter1.png" data-num="0" data-color="#fbe1ec">
+			<img src="assets/aesthetic-letter2.png" data-num="1" data-color="#a7dff8">
+			<img src="assets/aesthetic-letter3.png" data-num="2" data-color="#99d6da" id="dotstrigger">
+			<img src="assets/aesthetic-letter4.png" data-num="3" data-color="#ffc75a">
+			<img src="assets/aesthetic-letter5.png" data-num="4" data-color="#b1b3b5">
+			<img src="assets/aesthetic-letter6.png" data-num="5" data-color="#9ab3dc">
+			<img src="assets/aesthetic-letter7.png" data-num="6" data-color="#e8e8e9">
+			<img src="assets/aesthetic-letter8.png" data-num="3" data-color="#faba98">
+			<img src="assets/aesthetic-letter9.png" data-num="1" data-color="#c4b9db">
 		</div>
-		<div class="col-md-5">
-			<img src="assets/headshot_christinecha.png">
+
+		<div class="caption">
+			choose a letter
 		</div>
+
+		<div class="displaybox displaybox-0">
+			<a class="closeIcon">X</a>
+			<img class="draggable-within-parent" src="assets/gilad-large.png">
+		</div>
+
+		<div class="displaybox displaybox-1">
+			<a class="closeIcon">X</a>
+			<a href="https://dibbl.co" target="blank"><img src="assets/dibbl.png"></a>
+		</div>
+
+		<div class="displaybox displaybox-2">
+			<a class="closeIcon">X</a>
+			<div class="grid-area desktop-only">
+				<div id="grid">
+				</div>
+			</div>
+			<p>available on desktop only.</p>
+		</div>
+
+		<div class="displaybox displaybox-3">
+			<a class="closeIcon">X</a>
+			<img src="assets/Character_small-05.png">
+			<img src="assets/Character_small-06.png">
+			<img src="assets/Character_small-07.png">
+			<img src="assets/Character_small-08.png">
+		</div>
+
+		<div class="displaybox displaybox-4">
+			<a class="closeIcon">X</a>
+			<img src="assets/MPIA_festivalguide.png">
+			<img src="assets/MPIA_festivalguide2.png">
+			<img src="assets/MPIA_festivalguide3.png">
+			<img src="assets/MPIA_festivalguide4.png">
+			<img src="assets/MPIA_festivalguide5.png">
+		</div>
+
+		<div class="displaybox displaybox-5">
+			<a class="closeIcon">X</a>
+			<img src="assets/heart_100x100.gif"><br>
+			<img src="assets/flyingbox.gif"><br>
+			<img src="assets/Party-Blower.gif">
+		</div>
+
+		<div class="displaybox displaybox-6">
+			<a class="closeIcon">X</a>
+			<div class="colorpicker">
+				<div class="swatch"></div>
+				<div class="swatch"></div>
+				<div class="swatch"></div>
+				<div class="swatch"></div>
+				<div class="swatch"></div>
+			</div>
+			<img src="assets/orbareket-cutout-01.png"><br>
+		</div>
+
+
+
 	</div>
 
-	<!--PROJECT SLIDESHOW-->
-	<div class="container-fluid">
-		<div class="prevArrow">
-			{
-		</div>
-		<div class="nextArrow">
-		}
-		</div>
-		<div class="projects">
-			<div class="slide">
-				<span class="slide-label">
-					<a href="http://christinecha.github.io/connect-the-dots/" target="_blank">CONNECT THE DOTS</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					HTML/CSS/JS/JQUERY toy app
-				</span>
-				<img src="assets/slide_dots-01.png">
-			</div>
-			<div class="slide">
-				<span class="slide-label">
-					<a href="https://www.dropbox.com/s/zixkvasmyebjv2v/Inksy%20Designs.zip?dl=0" target="_blank">INKSY.CO</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					UI Mockups (Photoshop)
-				</span>
-				<img src="assets/slide_inksy.png">
-			</div>
-			<div class="slide">
-				<span class="slide-label">
-					<a href="https://dibbl.co" target="_blank">DIBBL</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					JS + Firebase Web App
-				</span>
-				<img src="assets/slide_dibbl.png">
-			</div>
-			<div class="slide">
-				<span class="slide-label">
-					<a href="https://orbareket.com" target="_blank">OR BAREKET</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					Static Website (HTML/CSS/JS)
-				</span>
-				<img src="assets/slide_orbareket-01.png">
-			</div>
-			<div class="slide">
-				<span class="slide-label">
-					<a href="https://www.dropbox.com/s/ktbpic0g8ri2z6k/Gilad%20Hekselman%20Album.zip?dl=0" target="_blank">GILAD HEKSELMAN</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					Album Artwork (Photoshop/Illustrator)
-				</span>
-				<img src="assets/slide_gilad.png">
-			</div>
-			<div class="slide">
-				<span class="slide-label">
-					<a href="https://www.dropbox.com/s/9sa9jws0hnhwze4/Festival%20Guide.pdf?dl=0" target="_blank">OPEN MARKET NYC</a>
-				</span>
-				<br>
-				<span class="slide-caption">
-					Print Design (not ads)
-				</span>
-				<img src="assets/slide_mpia.jpg">
-			</div>
-		</div>
-	</div>
-
-<!--CONTACT-->
-	<!-- <div class="container-fluid">
-		<div class="col-xs-3 contact-picker">
-
-		</div>
-		<div class="col-xs-9">
-			dod tot
-		</div>
-	</div> -->
 
 	<script type="text/javascript" src="scripts/index.js"></script>
+	<script type="text/javascript" src="scripts/aesthetic.js"></script>
+	<script src="scripts/dots.js"></script>
+
 </body>
 
 </html>

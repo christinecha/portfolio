@@ -1,0 +1,60 @@
+.block-1 {
+  height: 100vh;
+  min-height: 800px;
+  padding-top: 180px;
+  background-color: #f3f5f9;
+  background-image: url('../assets/headshot_christinecha.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+}
+
+.closeIcon { font-family: 'Quicksand', sans-serif; font-size: 60px; z-index: 200; position: absolute; top: 100px; right: 46%; color: white; font-weight: bold; text-shadow: 0 0 10px rgba(0,0,0,.3); }
+.aesthetic { z-index: 100; position: relative; }
+.aesthetic img { padding: 5px; border-bottom: 10px solid transparent; cursor: pointer; }
+
+.caption {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 100;
+  background-color: white;
+  width: 400px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.displaybox {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+
+.displaybox-1, .displaybox-3, .displaybox-5, .displaybox-6 { padding-top: 400px; }
+.displaybox-4 img { max-width: 100%; }
+.displaybox-5 { background-color: white; }
+.displaybox-6 { background-color: #f2f2f2; }
+.grid-area { width: 600px; height: 400px; margin-top: 300px; margin-left: auto; margin-right: auto; }
+.swatch { display: inline-block; height: 30px; width: 30px; background-color: red; border-radius: 100%; cursor: pointer; }
+.swatch:hover { border: 3px solid white; }
+
+@media (max-width:700px) {
+  .desktop-only { display: none; }
+  .block-1 { padding-top: 140px; background-image: none; }
+  .aesthetic img { height: 50px; }
+  .closeIcon { top: 60px; right: 20px; }
+  .caption { width: 90%; box-shadow: 0 0 15px rgba(0,0,0,.1); border-radius: 10px; }
+  .displaybox-1 img { max-width: 90%; margin-top: -60px; }
+  .displaybox-2 p { margin-top: 320px; }
+  .displaybox-3, .displaybox-5 { padding-top: 300px; }
+  .displaybox-3 img { margin: 10px; }
+  .displaybox-5 img { max-width: 100%; }
+  .displaybox-6 { padding-top: 350px; }
+}
