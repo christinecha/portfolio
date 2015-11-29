@@ -15,6 +15,7 @@ var captions = [
   'Open Market NYC<br>Festival Guide (PRINT)<br><span class="xs">(SCROLL TO VIEW)</span>',
   'GIFS! GIFS! GIFS!<br>Animated Illustrations<br><span class="xs">(ILLUSTRATOR/PHOTOSHOP)</span>',
   'OR BAREKET<br>Logo + Brand Assets<br><span class="xs">(CHOOSE A COLOR)</span>',
+  'WELLTHILY<br>Sponsorship Pitch Deck<br><span class="xs">(INDESIGN/PHOTOSHOP)</span>'
 ];
 
 $('.aesthetic').on('click', 'img', function(){

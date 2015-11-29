@@ -41,7 +41,7 @@
 .displaybox-3 { padding-bottom: 50px; }
 .displaybox-3 img { width: 200px; }
 .displaybox-3 .screen { width: 400px; }
-.displaybox-4 img { max-width: 100%; }
+.displaybox-4 img, .displaybox-7 img { max-width: 100%; }
 .displaybox-5 { background-color: white; }
 .displaybox-6 { background-color: #f2f2f2; }
 .grid-area { width: 600px; height: 400px; margin-top: 300px; margin-left: auto; margin-right: auto; }
