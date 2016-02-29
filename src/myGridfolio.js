@@ -33,7 +33,7 @@ export const Folio = [
       link: null,
       image: null,
       backgroundColor: "#9BD7E0",
-      titleFontSize: 60
+      titleFontSize: 40
     },
     {
       title: "Mini Scoop Shop",

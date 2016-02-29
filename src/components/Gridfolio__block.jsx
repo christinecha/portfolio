@@ -10,8 +10,8 @@ export class Block extends React.Component{
   constructor(props) {
     super(props)
     let newWidth = parseInt(window.innerWidth)
-    if (newWidth >= FolioStyle.bodyMaxWidth) {
-      newWidth = FolioStyle.bodyMaxWidth
+    if (newWidth >= FolioStyle.body.maxWidth) {
+      newWidth = FolioStyle.body.maxWidth
     }
     this.state = {
       windowWidth: newWidth
@@ -21,8 +21,8 @@ export class Block extends React.Component{
   componentDidMount() {
     window.addEventListener('resize', () => {
       let newWidth = parseInt(window.innerWidth)
-      if (newWidth >= FolioStyle.bodyMaxWidth) {
-        newWidth = FolioStyle.bodyMaxWidth
+      if (newWidth >= FolioStyle.body.maxWidth) {
+        newWidth = FolioStyle.body.maxWidth
       }
       this.setState({
         windowWidth: newWidth

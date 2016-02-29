@@ -4,7 +4,7 @@ import React from 'react'
 
 export const Default = {
   body: {
-    maxWidth: 1400,
+    maxWidth: 1200,
   },
   block: {
     heightRatio: 1,
