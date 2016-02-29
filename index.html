@@ -1,159 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!--FONTS-->
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,300,700|Work+Sans:100,300,700|Montserrat' rel='stylesheet' type='text/css' />
-
-	<!--STYLESHEETS-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/global.css" type="text/css" />
-	<link rel="stylesheet" href="css/index2.css" type="text/css" />
-	<link rel="stylesheet" href="css/dots.css" type="text/css" />
-
-	<!--SCRIPTS-->
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Geo:400|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div class="container-fluid">
-		<nav>
-			<ul>
-				<li class="left-nav">CHRISTINE CHA</li>
-				<li class="socicon left-nav"><a href="http://twitter.com/christinechanyc">a</a></li>
-				<li class="socicon left-nav"><a href="https://www.linkedin.com/profile/view?id=152655283&trk=hp-identity-name">j</a></li>
-				<li class="socicon left-nav"><a href="https://github.com/christinecha">Q</a></li>
-				<li class="left-nav"><a href="https://dibbl.co/christinecha"><img src="assets/dibbl-icon.svg" width="19" style="margin-top: -2px;" /></a></li>
-				<li class="right-nav"><a href="mailto:hello@christinecha.com" target="_blank">hello@christinecha.com</a></li>
-			</ul>
-		</nav>
-	</div>
 
-	<svg id="canvas" width="100%" height="100%">
-		<line class="line original" x1="0" y1="0" x2="0" y2="0" />
-	</svg>
+  <div id="gridfolio-react">
+  </div>
 
-
-	<div class="block-1">
-		<div class="aesthetic">
-			<img src="assets/aesthetic-letter1.png" data-num="0" data-color="#fbe1ec">
-			<img src="assets/aesthetic-letter2.png" data-num="1" data-color="#a7dff8">
-			<img src="assets/aesthetic-letter3.png" data-num="2" data-color="#99d6da" id="dotstrigger">
-			<img src="assets/aesthetic-letter4.png" data-num="3" data-color="#ffc75a">
-			<img src="assets/aesthetic-letter5.png" data-num="4" data-color="#b1b3b5">
-			<img src="assets/aesthetic-letter6.png" data-num="5" data-color="#9ab3dc">
-			<img src="assets/aesthetic-letter7.png" data-num="6" data-color="#e8e8e9">
-			<img src="assets/aesthetic-letter8.png" data-num="7" data-color="#faba98">
-			<img src="assets/aesthetic-letter9.png" data-num="1" data-color="#c4b9db">
-		</div>
-
-		<div class="caption">
-			choose a letter
-		</div>
-
-		<div class="displaybox displaybox-0">
-			<a class="closeIcon">X</a>
-			<img class="draggable-within-parent" src="assets/gilad-large.png">
-		</div>
-
-		<div class="displaybox displaybox-1">
-			<a class="closeIcon">X</a>
-			<a href="https://dibbl.co" target="blank"><img src="assets/dibbl.png"></a>
-		</div>
-
-		<div class="displaybox displaybox-2">
-			<a class="closeIcon">X</a>
-			<div class="grid-area desktop-only">
-				<div id="grid">
-				</div>
-			</div>
-			<p class="mobile-only">available on desktop only.</p>
-		</div>
-
-		<div class="displaybox displaybox-3">
-			<a class="closeIcon">X</a>
-			<img src="assets/Character-01.png">
-			<img src="assets/Character-02.png">
-			<img src="assets/Character-03.png">
-			<br>
-			<img src="assets/Character-04.png">
-			<img src="assets/Character-05.png">
-			<img src="assets/Character-06.png">
-			<br><br>
-			<img src="assets/kebabking_screen-01.png" class="screen">
-			<img src="assets/kebabking_screen-02.png" class="screen">
-		</div>
-
-		<div class="displaybox displaybox-4">
-			<a class="closeIcon">X</a>
-			<img src="assets/MPIA_festivalguide.png">
-			<img src="assets/MPIA_festivalguide2.png">
-			<img src="assets/MPIA_festivalguide3.png">
-			<img src="assets/MPIA_festivalguide4.png">
-			<img src="assets/MPIA_festivalguide5.png">
-		</div>
-
-		<div class="displaybox displaybox-5">
-			<a class="closeIcon">X</a>
-			<img src="assets/heart_100x100.gif"><br>
-			<img src="assets/flyingbox.gif"><br>
-			<img src="assets/Party-Blower.gif">
-		</div>
-
-		<div class="displaybox displaybox-6">
-			<a class="closeIcon">X</a>
-			<div class="colorpicker">
-				<div class="swatch"></div>
-				<div class="swatch"></div>
-				<div class="swatch"></div>
-				<div class="swatch"></div>
-				<div class="swatch"></div>
-			</div>
-			<img src="assets/orbareket-cutout-01.png"><br>
-		</div>
-
-		<div class="displaybox displaybox-7">
-			<a class="closeIcon">X</a>
-			<img src="assets/wellthilydeck.png">
-			<img src="assets/wellthilydeck2.png">
-			<img src="assets/wellthilydeck3.png">
-			<img src="assets/wellthilydeck4.png">
-			<img src="assets/wellthilydeck5.png">
-			<img src="assets/wellthilydeck6.png">
-			<img src="assets/wellthilydeck7.png">
-			<img src="assets/wellthilydeck8.png">
-			<img src="assets/wellthilydeck9.png">
-			<img src="assets/wellthilydeck10.png">
-			<img src="assets/wellthilydeck11.png">
-			<img src="assets/wellthilydeck12.png">
-			<img src="assets/wellthilydeck13.png">
-			<img src="assets/wellthilydeck14.png">
-		</div>
-
-
-
-	</div>
-
-
-	<script type="text/javascript" src="scripts/index.js"></script>
-	<script type="text/javascript" src="scripts/aesthetic.js"></script>
-	<script src="scripts/dots.js"></script>
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-39748310-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
+  <script src="bundle.js" type="text/javascript"></script>
 </body>
 
 </html>
