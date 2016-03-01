@@ -64,7 +64,7 @@ export class Block extends React.Component{
         width: blockWidth + 'px',
         height: blockHeight + 'px',
         backgroundColor: block.backgroundColor || FolioStyle.block.backgroundColor,
-        backgroundImage: block.image,
+        backgroundImage: block.image || null,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         textAlign: FolioStyle.block.textAlign,

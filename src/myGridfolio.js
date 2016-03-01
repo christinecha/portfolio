@@ -20,20 +20,20 @@ export const Folio = [
   ],
   [ // Row 1
     {
-      title: "Circlematch",
-      brief: "An in-browser and iOS native game written in React and React-Native.",
-      link: "https://christinecha.github.io/circlematch",
-      image: "url('./src/assets/CircleMatch.png')",
-      keywords: ["ios", "react", "react-native", "javascript", "html", "css"],
-      isTinted: true,
-    },
-    {
       title: "Christine Cha",
       brief: null,
       link: null,
       image: null,
       backgroundColor: "#9BD7E0",
       titleFontSize: 40
+    },
+    {
+      title: "Circlematch",
+      brief: "An in-browser and iOS native game written in React and React-Native.",
+      link: "https://christinecha.github.io/circlematch",
+      image: "url('./src/assets/CircleMatch.png')",
+      keywords: ["ios", "react", "react-native", "javascript", "html", "css"],
+      isTinted: true,
     },
     {
       title: "Mini Scoop Shop",
@@ -130,7 +130,7 @@ export const Folio = [
       title: <i className="fa fa-twitter"></i>,
       brief: null,
       link: "https://twitter.com/christinechanyc",
-      image: "https://image.com",
+      image: null,
       backgroundColor: '#9BD7E0',
       titleFontSize: 30
     },
@@ -138,7 +138,7 @@ export const Folio = [
       title: <i className="fa fa-github"></i>,
       brief: null,
       link: "https://github.com/christinechanyc",
-      image: "https://image.com",
+      image: null,
       backgroundColor: '#9BD7E0',
       titleFontSize: 30
     },
@@ -146,7 +146,7 @@ export const Folio = [
       title: <i className="fa fa-envelope"></i>,
       brief: null,
       link: "mailto:hello@christinecha.com",
-      image: "https://image.com",
+      image: null,
       backgroundColor: '#9BD7E0',
       titleFontSize: 30
     },
@@ -154,7 +154,7 @@ export const Folio = [
       title: <i className="fa fa-instagram"></i>,
       brief: null,
       link: "https://instagram.com/christinechanyc",
-      image: "https://image.com",
+      image: null,
       backgroundColor: '#9BD7E0',
       titleFontSize: 30
     },
