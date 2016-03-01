@@ -14,7 +14,7 @@ export const Folio = [
       image: null,
       titleColor: '#818182',
       titleFontSize: 16,
-      heightRatio: 0.03,
+      customHeight: 0.03,
       borderRadius: '0'
     },
   ],
@@ -44,6 +44,28 @@ export const Folio = [
       isTinted: true
     }
   ],
+  // [
+  //   {
+  //     title: "NYC Jazz Bot",
+  //     brief: "A twitter bot.",
+  //     link: "https://twitter.com/nycjazzapp",
+  //     image: null,
+  //     keywords: ["python", "twitter api"],
+  //     isTinted: true,
+  //     customWidth: 0.2,
+  //     customHeight: 0.5
+  //   },
+  //   {
+  //     title: "Mini Scoop Shop",
+  //     brief: "A tiny eCommerce shop.",
+  //     link: "https://icecreamaccessories.herokuapp.com/",
+  //     image: "url('./src/assets/MiniScoopShop.png')",
+  //     keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
+  //     isTinted: true,
+  //     customWidth: 0.5,
+  //     customHeight: 0.5
+  //   }
+  // ],
   [ // Row 2
     {
       title: "HOMES (Gilad Hekselman)",
