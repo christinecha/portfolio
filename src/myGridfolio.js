@@ -137,7 +137,7 @@ export const Folio = [
     {
       title: <i className="fa fa-github"></i>,
       brief: null,
-      link: "https://github.com/christinechanyc",
+      link: "https://github.com/christinecha",
       image: null,
       backgroundColor: '#9BD7E0',
       titleFontSize: 30
