@@ -6,18 +6,6 @@ import * as style from './myGridfolioStyles'
 export const FolioStyle = style.Default
 
 export const Folio = [
-  [ // Row 0
-    {
-      title: "Gridfolio: a simple layout for developers >>",
-      brief: "An in-browser and iOS native game written in React and React-Native.",
-      link: "https://github.com/christinecha/gridfolio",
-      image: null,
-      titleColor: '#818182',
-      titleFontSize: 16,
-      customHeight: 0.03,
-      borderRadius: '0'
-    },
-  ],
   [ // Row 1
     {
       title: "Christine Cha",
@@ -44,28 +32,17 @@ export const Folio = [
       isTinted: true
     }
   ],
-  // [
-  //   {
-  //     title: "NYC Jazz Bot",
-  //     brief: "A twitter bot.",
-  //     link: "https://twitter.com/nycjazzapp",
-  //     image: null,
-  //     keywords: ["python", "twitter api"],
-  //     isTinted: true,
-  //     customWidth: 0.2,
-  //     customHeight: 0.5
-  //   },
-  //   {
-  //     title: "Mini Scoop Shop",
-  //     brief: "A tiny eCommerce shop.",
-  //     link: "https://icecreamaccessories.herokuapp.com/",
-  //     image: "url('./src/assets/MiniScoopShop.png')",
-  //     keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
-  //     isTinted: true,
-  //     customWidth: 0.5,
-  //     customHeight: 0.5
-  //   }
-  // ],
+  [
+    {
+      title: "Gridfolio: a simple layout for developers >>",
+      link: "https://github.com/christinecha/gridfolio",
+      image: "url('./src/assets/squiggles.png')",
+      backgroundColor: '#F58BAD',
+      titleFontSize: 18,
+      customHeight: 0.1,
+      borderRadius: '0'
+    },
+  ],
   [ // Row 2
     {
       title: "HOMES (Gilad Hekselman)",
@@ -120,11 +97,20 @@ export const Folio = [
   ],
   [ // Row 4
     {
-      title: null,
+      title: <i className="fa fa-linkedin"></i>,
       brief: null,
-      link: null,
+      link: "https://www.linkedin.com/in/christinechanyc",
       image: null,
-      backgroundColor: 'transparent',
+      backgroundColor: '#9BD7E0',
+      titleFontSize: 30
+    },
+    {
+      title: <img className="fa" src="./src/assets/recurse_logo.png" height="35"/>,
+      brief: null,
+      link: "https://recurse.com",
+      image: null,
+      backgroundColor: '#9BD7E0',
+      titleFontSize: 30
     },
     {
       title: <i className="fa fa-twitter"></i>,
@@ -159,11 +145,20 @@ export const Folio = [
       titleFontSize: 30
     },
     {
-      title: null,
+      title: <i className="fa fa-apple"></i>,
       brief: null,
-      link: null,
+      link: "https://itunes.apple.com/us/app/circlematch-minimalistic-sliding/id1082737491?ls=1&mt=8",
       image: null,
-      backgroundColor: 'transparent'
-    }
+      backgroundColor: '#9BD7E0',
+      titleFontSize: 30
+    },
+    {
+      title: <i className="fa fa-angellist"></i>,
+      brief: null,
+      link: "https://angel.co/christinechanyc",
+      image: null,
+      backgroundColor: '#9BD7E0',
+      titleFontSize: 30
+    },
   ]
 ]

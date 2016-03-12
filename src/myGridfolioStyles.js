@@ -12,7 +12,7 @@ export const Default = {
     innerPadding: 10,
     borderRadius: '0',
     backgroundColor: '#f1f1f2',
-    tint: 'rgba(0,0,0,0.4)',
+    tint: 'rgba(45,47,40,0.4)',
     textAlign: 'center',
     title: {
       color: '#fff',
