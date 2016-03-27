@@ -27,10 +27,10 @@ export const Default = {
       textAlign: 'center'
     },
     keyword: {
-      fontSize: 12,
+      fontSize: 12.5,
       fontFamily: 'Geo', // ! Remember to add any font resources to index.html in a link tag.
-      color: '#666',
-      backgroundColor: 'rgba(240,240,240,0.75)',
+      color: '#535354',
+      backgroundColor: 'rgba(255,255,255,0.75)',
       padding: '2px 4px',
       fontWeight: 'bold',
       textTransform: 'uppercase'

@@ -24,13 +24,12 @@ export const Folio = [
       isTinted: true,
     },
     {
-      title: "Mini Scoop Shop",
-      brief: "A tiny eCommerce shop.",
-      link: "https://icecreamaccessories.herokuapp.com/",
-      image: "url('./src/assets/MiniScoopShop.png')",
-      keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
+      title: "Clickbait Generator",
+      link: "https://clickbaiter.herokuapp.com",
+      image: "url('https://farm2.staticflickr.com/1288/5187875836_3a9e471fce.jpg')",
+      keywords: ["nodejs", "express", "react", "javascript", "html", "css"],
       isTinted: true
-    }
+    },
   ],
   [
     {
@@ -50,6 +49,14 @@ export const Folio = [
       link: "http://www.giladhekselman.com/discography/",
       image: "url('./src/assets/GiladHekselman.jpeg')",
       keywords: ["photoshop", "graphic design", "photo editing"],
+      isTinted: true
+    },
+    {
+      title: "Mini Scoop Shop",
+      brief: "A tiny eCommerce shop.",
+      link: "https://icecreamaccessories.herokuapp.com/",
+      image: "url('./src/assets/MiniScoopShop.png')",
+      keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
       isTinted: true
     },
     {

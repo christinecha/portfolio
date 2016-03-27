@@ -59,7 +59,7 @@ export const calculateBlockStyle = (windowWidth, block, row, FolioStyle) => {
       fontFamily: FolioStyle.block.title.fontFamily,
       textTransform: FolioStyle.block.title.textTransform,
       fontWeight: FolioStyle.block.title.fontWeight,
-      backgroundColor: block.isTinted ? FolioStyle.block.tint : null,
+      backgroundColor: block.isTinted ? (block.tint || FolioStyle.block.tint) : null,
       borderRadius: block.borderRadius || FolioStyle.block.borderRadius
     }
   }
