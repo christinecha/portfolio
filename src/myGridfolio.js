@@ -13,7 +13,8 @@ export const Folio = [
       link: null,
       image: null,
       backgroundColor: "#9BD7E0",
-      titleFontSize: 40
+      titleFontSize: 40,
+      minHeight: 200
     },
     {
       title: "Circlematch",
@@ -22,13 +23,15 @@ export const Folio = [
       image: "url('./src/assets/CircleMatch.png')",
       keywords: ["ios", "react", "react-native", "javascript", "html", "css"],
       isTinted: true,
+      minHeight: 200
     },
     {
       title: "Clickbait Generator",
       link: "https://clickbaiter.herokuapp.com",
       image: "url('https://farm2.staticflickr.com/1288/5187875836_3a9e471fce.jpg')",
       keywords: ["nodejs", "express", "react", "javascript", "html", "css"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
   ],
   [
@@ -38,7 +41,7 @@ export const Folio = [
       image: "url('./src/assets/squiggles.png')",
       backgroundColor: '#F58BAD',
       titleFontSize: 18,
-      customHeight: 0.1,
+      customHeight: 0.2,
       borderRadius: '0'
     },
   ],
@@ -49,7 +52,8 @@ export const Folio = [
       link: "http://www.giladhekselman.com/discography/",
       image: "url('./src/assets/GiladHekselman.jpeg')",
       keywords: ["photoshop", "graphic design", "photo editing"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
     {
       title: "Mini Scoop Shop",
@@ -57,7 +61,8 @@ export const Folio = [
       link: "https://icecreamaccessories.herokuapp.com/",
       image: "url('./src/assets/MiniScoopShop.png')",
       keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
     {
       title: "NYC Jazz Scraper",
@@ -65,7 +70,8 @@ export const Folio = [
       link: "https://github.com/christinecha/nyc-jazz-shows",
       image: "url('./src/assets/Jazz.jpeg')",
       keywords: ["node", "express", "cheerio"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
     {
       title: "RC Thursday Presentations",
@@ -73,7 +79,8 @@ export const Folio = [
       link: "https://presentations.recurse.com/",
       image: "url('./src/assets/RCPresentations.png')",
       keywords: ["react", "javascript", "html", "css", "firebase"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     }
   ],
   [ // Row 3
@@ -83,7 +90,8 @@ export const Folio = [
       link: null,
       image: "url('./src/assets/MPIA_festivalguide.png')",
       keywords: ["photoshop", "graphic design", "illustrator", "indesign"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
     {
       title: "Kebab King",
@@ -91,7 +99,8 @@ export const Folio = [
       link: "https://kebabking.io",
       image: "url('./src/assets/KebabKing.png')",
       keywords: ["game design", "illustrator", "ui design"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     },
     {
       title: "Sponsorship Deck (Wellthily)",
@@ -99,7 +108,8 @@ export const Folio = [
       link: "http://wellthily.com/",
       image: "url('./src/assets/Wellthily.png')",
       keywords: ["photoshop", "graphic design", "illustrator", "indesign"],
-      isTinted: true
+      isTinted: true,
+      minHeight: 200
     }
   ],
   [ // Row 4
