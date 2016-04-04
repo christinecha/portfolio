@@ -80,7 +80,7 @@ export const fitToMobile = (windowWidth, rowLength, padding, blockWidth) => {
     } else {
       return (windowWidth) - (padding * 2)
     }
-  } else if (windowWidth < 900) {
+  } else if (windowWidth < 1000) {
     if (isEven(rowLength)) {
       return (windowWidth / (rowLength / 2)) - (padding * 2)
     } else if (isDivisibleBy3(rowLength)) {

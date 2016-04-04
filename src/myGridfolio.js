@@ -21,7 +21,7 @@ export const Folio = [
       brief: "An in-browser and iOS native game written in React and React-Native.",
       link: "https://christinecha.github.io/circlematch",
       image: "url('./src/assets/CircleMatch.png')",
-      keywords: ["ios", "react", "react-native", "javascript", "html", "css"],
+      keywords: ["ios", "react-native", "javascript", "css"],
       isTinted: true,
       minHeight: 200
     },
@@ -29,10 +29,18 @@ export const Folio = [
       title: "Clickbait Generator",
       link: "https://clickbaiter.herokuapp.com",
       image: "url('https://farm2.staticflickr.com/1288/5187875836_3a9e471fce.jpg')",
-      keywords: ["nodejs", "express", "react", "javascript", "html", "css"],
+      keywords: ["nodejs", "react", "javascript", "html", "css"],
       isTinted: true,
       minHeight: 200
     },
+    {
+      title: "Slinky Draw",
+      link: "http://christinecha.github.io/slinkydraw/",
+      image: "url('./src/assets/slinky_8.png')",
+      keywords: ["html", "css", "javascript", "canvas"],
+      isTinted: true,
+      minHeight: 200
+    }
   ],
   [
     {
@@ -47,20 +55,11 @@ export const Folio = [
   ],
   [ // Row 2
     {
-      title: "HOMES (Gilad Hekselman)",
-      brief: "Complete 6-panel album artwork.",
-      link: "http://www.giladhekselman.com/discography/",
-      image: "url('./src/assets/GiladHekselman.jpeg')",
-      keywords: ["photoshop", "graphic design", "photo editing"],
-      isTinted: true,
-      minHeight: 200
-    },
-    {
       title: "Mini Scoop Shop",
       brief: "A tiny eCommerce shop.",
       link: "https://icecreamaccessories.herokuapp.com/",
       image: "url('./src/assets/MiniScoopShop.png')",
-      keywords: ["html", "css", "Jquery", "stripe", "node", "express"],
+      keywords: ["Jquery", "stripe", "node", "express", "css"],
       isTinted: true,
       minHeight: 200
     },
@@ -78,7 +77,16 @@ export const Folio = [
       brief: "A little web app to make Thursday Presentations at RC a bit more fun.",
       link: "https://presentations.recurse.com/",
       image: "url('./src/assets/RCPresentations.png')",
-      keywords: ["react", "javascript", "html", "css", "firebase"],
+      keywords: ["react", "javascript", "css"],
+      isTinted: true,
+      minHeight: 200
+    },
+    {
+      title: "HOMES (Gilad Hekselman)",
+      brief: "Complete 6-panel album artwork.",
+      link: "http://www.giladhekselman.com/discography/",
+      image: "url('./src/assets/GiladHekselman.jpeg')",
+      keywords: ["photoshop", "graphic design"],
       isTinted: true,
       minHeight: 200
     }

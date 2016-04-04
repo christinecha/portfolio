@@ -9,8 +9,12 @@ a {
   text-decoration: none;
 }
 
+#gridfolio-react { margin: 0 auto; text-align: center; overflow: hidden; }
+#gridfolio-react > div { display: inline-block; }
+
 .folio-row {
-  margin: 0 auto;
+  margin: 0 -10px;
+  display: inline-block;
 }
 
 .folio-block {
