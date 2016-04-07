@@ -13,32 +13,39 @@ gf_content =  [
 Rows can have 1 - 9 blocks.
                                     */
 
+var socialMediaIconStyle = {
+  backgroundColor: '#9BD7E0',
+  fontSize: "30px",
+  color: "#fff"
+}
+
 var gf_content = [
   [ // Row 1
     {
       title: "Christine Cha",
       style: {
         backgroundColor: "#9BD7E0",
-        fontSize: "40px"
+        fontSize: "28px",
+        color: "#fff"
       }
     },
     {
       title: "Circlematch",
       link: "https://christinecha.github.io/circlematch",
       imageURL: "./assets/CircleMatch.png",
-      keywords: ["ios", "react-native", "javascript", "css"]
+      keywords: ["ios", "react-native", "javascript"]
     },
     {
       title: "Clickbait Generator",
       link: "https://clickbaiter.herokuapp.com",
       imageURL: "./assets/clickbait.png",
-      keywords: ["nodejs", "react", "javascript", "html", "css"]
+      keywords: ["nodejs", "react", "javascript"]
     },
     {
       title: "Slinky Draw",
       link: "http://christinecha.github.io/slinkydraw/",
       imageURL: "./assets/slinky_8.png",
-      keywords: ["html", "css", "javascript", "canvas"]
+      keywords: ["css", "javascript", "canvas"]
     }
   ],
   [
@@ -47,9 +54,8 @@ var gf_content = [
       link: "https://github.com/christinecha/gridfolio",
       customHeight: true,
       style: {
-        backgroundColor: '#d7d7d8',
-        height: '100px',
-        fontSize: "18px"
+        backgroundColor: '#eee',
+        height: '100px'
       }
     },
   ],
@@ -79,91 +85,46 @@ var gf_content = [
       keywords: ["photoshop", "graphic design"]
     }
   ],
-  [ // Row 3
-    {
-      title: "MPIA Festival Guide",
-      link: null,
-      imageURL: "./assets/MPIA_festivalguide.png",
-      keywords: ["photoshop", "graphic design", "illustrator", "indesign"]
-    },
-    {
-      title: "Kebab King",
-      link: "https://kebabking.io",
-      imageURL: "./assets/KebabKing.png",
-      keywords: ["game design", "illustrator", "ui design"]
-    },
-    {
-      title: "Sponsorship Deck (Wellthily)",
-      link: "http://wellthily.com/",
-      imageURL: "./assets/Wellthily.png",
-      keywords: ["photoshop", "graphic design", "illustrator", "indesign"]
-    }
-  ],
-  [ // Row 4
+  [ // row
     {
       title: "<i class='fa fa-linkedin'></i>",
       link: "https://www.linkedin.com/in/christinechanyc",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<img class='fa' src='./assets/recurse_logo.png' height='35'/>",
       link: "https://recurse.com",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-twitter'></i>",
       link: "https://twitter.com/christinechanyc",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-github'></i>",
-      brief: null,
       link: "https://github.com/christinecha",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-envelope'></i>",
       link: "mailto:hello@christinecha.com",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-instagram'></i>",
       link: "https://instagram.com/christinechanyc",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-apple'></i>",
       link: "https://itunes.apple.com/us/app/circlematch-minimalistic-sliding/id1082737491?ls=1&mt=8",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
     {
       title: "<i class='fa fa-angellist'></i>",
       link: "https://angel.co/christinechanyc",
-      style: {
-        backgroundColor: '#9BD7E0',
-        fontSize: "30px"
-      }
+      style: socialMediaIconStyle
     },
   ]
 ]
@@ -173,13 +134,13 @@ var gf_styles = {
   squareMode: true,
   innerBlock: {
     fontFamily: "Montserrat",
-    color: "#fff",
+    color: "rgba(15,15,15,0.6)",
     padding: "10px"
   },
   blockTitle: {
     margin: "0 auto",
     textTransform: "uppercase",
-    textShadow: "0 0 5px rgba(0,0,0,0.4)"
+    // textShadow: "0 0 2px rgba(0,0,0,0.8)"
   },
   keyword: {
     fontSize: "9px",
