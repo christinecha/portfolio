@@ -48,7 +48,7 @@ body {
 }
 
 .gf-block--inner:hover {
-  opacity: 0.8;
+  border: 5px solid #fff;
 }
 
 .gf-block--inner--spacer {
@@ -62,6 +62,10 @@ body {
   vertical-align: middle;
   font-size: inherit;
   max-width: 100%;
+}
+
+.gf-block--inner--title:hover {
+  font-weight: bold;
 }
 
 .gf-block--inner--keyword {

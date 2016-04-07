@@ -15,7 +15,7 @@ Rows can have 1 - 9 blocks.
 
 var socialMediaIconStyle = {
   backgroundColor: '#9BD7E0',
-  fontSize: "30px",
+  fontSize: "20px",
   color: "#fff"
 }
 
@@ -135,7 +135,7 @@ var gf_styles = {
   innerBlock: {
     fontFamily: "Montserrat",
     color: "rgba(15,15,15,0.6)",
-    padding: "10px"
+    padding: "15px"
   },
   blockTitle: {
     margin: "0 auto",
