@@ -31,7 +31,7 @@ var gf_content = [
     {
       title: "Clickbait Generator",
       link: "https://clickbaiter.herokuapp.com",
-      imageURL: "https://farm2.staticflickr.com/1288/5187875836_3a9e471fce.jpg",
+      imageURL: "./assets/clickbait.png",
       keywords: ["nodejs", "react", "javascript", "html", "css"]
     },
     {
@@ -45,10 +45,9 @@ var gf_content = [
     {
       title: "Gridfolio: a simple layout for developers >>",
       link: "https://github.com/christinecha/gridfolio",
-      imageURL: "./assets/squiggles.png",
       customHeight: true,
       style: {
-        backgroundColor: '#F58BAD',
+        backgroundColor: '#d7d7d8',
         height: '100px',
         fontSize: "18px"
       }
@@ -183,13 +182,15 @@ var gf_styles = {
     textShadow: "0 0 5px rgba(0,0,0,0.4)"
   },
   keyword: {
-    fontSize: "11px",
-    backgroundColor: "rgba(0,0,0,0.7)",
+    fontSize: "9px",
+    backgroundColor: "rgba(255,255,255,0.8)",
+    textTransform: "uppercase",
+    color: "#666",
     padding: "2px 5px",
     margin: "2px"
   },
   keywords: {
     fontSize: "10px",
-    marginTop: "-50px"
+    marginTop: "-40px"
   }
 }
