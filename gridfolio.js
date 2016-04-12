@@ -42,10 +42,10 @@ var gf_content = [
       keywords: ["nodejs", "react", "javascript"]
     },
     {
-      title: "Slinky Draw",
-      link: "http://christinecha.github.io/slinkydraw/",
-      imageURL: "./assets/slinky_8.png",
-      keywords: ["css", "javascript", "canvas"]
+      title: "NYC Jazz Scraper",
+      link: "https://bit.ly/nycjazzapp",
+      imageURL: "./assets/Jazz.jpeg",
+      keywords: ["node", "express", "cheerio"]
     }
   ],
   [
@@ -61,16 +61,16 @@ var gf_content = [
   ],
   [ // Row 2
     {
+      title: "Slinky Draw",
+      link: "http://christinecha.github.io/slinkydraw/",
+      imageURL: "./assets/slinky_8.png",
+      keywords: ["css", "javascript", "canvas"]
+    },
+    {
       title: "Mini Scoop Shop",
       link: "https://icecreamaccessories.herokuapp.com/",
       imageURL: "./assets/MiniScoopShop.png",
       keywords: ["Jquery", "stripe", "node", "express", "css"]
-    },
-    {
-      title: "NYC Jazz Scraper",
-      link: "https://bit.ly/nycjazzapp",
-      imageURL: "./assets/Jazz.jpeg",
-      keywords: ["node", "express", "cheerio"]
     },
     {
       title: "RC Thursday Presentations",
