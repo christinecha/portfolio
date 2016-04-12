@@ -68,7 +68,7 @@ var gf_content = [
     },
     {
       title: "NYC Jazz Scraper",
-      link: "https://github.com/christinecha/nyc-jazz-shows",
+      link: "https://bit.ly/nycjazzapp",
       imageURL: "./assets/Jazz.jpeg",
       keywords: ["node", "express", "cheerio"]
     },
