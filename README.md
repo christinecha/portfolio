@@ -2,4 +2,4 @@
 
 Gridfolio: https://github.com/christinecha/gridfolio
 
-This entire portfolio (not including assets, and not minified) weighs 16KB.
+This entire portfolio (using the minified index.js) weighs less than 9KB. Yay!
