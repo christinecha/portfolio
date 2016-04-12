@@ -23,9 +23,10 @@ var gf_content = [
   [ // Row 1
     {
       title: "Christine Cha",
+      keywords: ["developer", "designer"],
       style: {
         backgroundColor: "#9BD7E0",
-        fontSize: "28px",
+        fontSize: "26px",
         color: "#fff"
       }
     },
