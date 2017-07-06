@@ -87,23 +87,62 @@ nav {
   width: 100%;
   max-width: 350px;
   margin-bottom: 5vw;
+  cursor: pointer;
+
+  opacity: 0.4;
+  transition: opacity 300ms ease-in-out;
+
+  &.is-active {
+    opacity: 1;
+
+    a {
+      border-bottom: 1px solid #fff;
+    }
+
+    span {
+      transition: transform 300ms ease-in-out;
+    }
+  }
 
   @media @tablet {
     width: 50%;
     max-width: 35vw;
-  }
 
-  @media @desktop-lg { max-width: 22vw; }
-
-  &:nth-child(odd)  {
     margin-right: 10vw;
-    @media @desktop-lg { margin-right: 8vw; }
+
+    &:nth-child(even) { margin-right: auto; }
   }
 
-  &:nth-child(even) { margin-right: auto; }
+  @media @desktop-lg {
+    width: 33.3%;
+    max-width: 24vw;
+
+    margin-right: 8vw;
+
+    &:nth-child(even) { margin-right: 8vw; }
+    &:nth-child(3n + 3) { margin-right: auto; }
+  }
+
+  span {
+    display: inline-block;
+    transition: transform 500ms ease-in-out;
+
+    &.space {
+      width: 1ch;
+      display: inline;
+    }
+  }
+
+  a {
+    border-bottom: 1px solid rgba(255,255,255,0);
+    transition: border-color 300ms ease-in-out;
+  }
 
   p {
     margin-top: 10px;
+  }
+
+  p, p span {
     color: rgba(255, 255, 255, 0.5);
 
     .force-opaque { color: white; }

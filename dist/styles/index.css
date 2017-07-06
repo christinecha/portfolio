@@ -565,33 +565,62 @@ nav {
   width: 100%;
   max-width: 350px;
   margin-bottom: 5vw;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 300ms ease-in-out;
+}
+.project.is-active {
+  opacity: 1;
+}
+.project.is-active a {
+  border-bottom: 1px solid #fff;
+}
+.project.is-active span {
+  transition: transform 300ms ease-in-out;
 }
 @media all and (min-width: 768px) {
   .project {
     width: 50%;
     max-width: 35vw;
+    margin-right: 10vw;
+  }
+  .project:nth-child(even) {
+    margin-right: auto;
   }
 }
 @media all and (min-width: 1441px) {
   .project {
-    max-width: 22vw;
-  }
-}
-.project:nth-child(odd) {
-  margin-right: 10vw;
-}
-@media all and (min-width: 1441px) {
-  .project:nth-child(odd) {
+    width: 33.3%;
+    max-width: 24vw;
     margin-right: 8vw;
   }
+  .project:nth-child(even) {
+    margin-right: 8vw;
+  }
+  .project:nth-child(3n + 3) {
+    margin-right: auto;
+  }
 }
-.project:nth-child(even) {
-  margin-right: auto;
+.project span {
+  display: inline-block;
+  transition: transform 500ms ease-in-out;
+}
+.project span.space {
+  width: 1ch;
+  display: inline;
+}
+.project a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  transition: border-color 300ms ease-in-out;
 }
 .project p {
   margin-top: 10px;
+}
+.project p,
+.project p span {
   color: rgba(255, 255, 255, 0.5);
 }
-.project p .force-opaque {
+.project p .force-opaque,
+.project p span .force-opaque {
   color: white;
 }
