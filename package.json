@@ -1,0 +1,44 @@
+{
+  "name": "christine-cha-portfolio",
+  "version": "0.0.1",
+  "description": "Simple portfolio website for Christine Cha.",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "gulp watch",
+    "start": "gulp watch & webpack-dev-server --hot --progress",
+    "build": "gulp:less && webpack",
+    "tunnel": "ngrok http 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christinecha/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "hello@christinecha.com (https://www.christinecha.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christinecha/portfolio/issues"
+  },
+  "homepage": "https://github.com/christinecha/portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.10.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "ngrok": "^2.2.6",
+    "path": "^0.12.7",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
