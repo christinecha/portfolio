@@ -16,20 +16,26 @@ main {
 }
 
 h1 {
+  // font-size: 16px;
+  // font-weight: 300;
+  // letter-spacing: 0.08em;
+  //
+  // @media @tablet { font-size: 2vw; }
+  // @media @desktop-lg { font-size: 1vw; }
+
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
 
-  @media @tablet { font-size: 2vw; }
-  @media @desktop-lg { font-size: 1vw; }
+  @media @desktop-xxl { font-size: 20px; }
 }
 
 h2 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
-  opacity: 0.5;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
 }
 
 
@@ -37,6 +43,9 @@ h3 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1em;
+
+  @media @desktop-xl { font-size: 16px; }
+  @media @desktop-xxl { font-size: 20px; }
 }
 
 p, a {
@@ -52,8 +61,9 @@ p, a {
     font-weight: 300;
     letter-spacing: 0.02em;
   }
-
-  @media @desktop-lg { font-size: 2vw; }
+  @media @desktop { font-size: 2.8vw; }
+  @media @desktop-xl { font-size: 2.5vw; }
+  @media @desktop-xxl { font-size: 2vw; }
 }
 
 a {

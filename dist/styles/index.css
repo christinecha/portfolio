@@ -406,29 +406,34 @@ main {
 h1 {
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1920px) {
   h1 {
-    font-size: 2vw;
-  }
-}
-@media all and (min-width: 1441px) {
-  h1 {
-    font-size: 1vw;
+    font-size: 20px;
   }
 }
 h2 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
-  opacity: 0.5;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
 }
 h3 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1em;
+}
+@media all and (min-width: 1601px) {
+  h3 {
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 1920px) {
+  h3 {
+    font-size: 20px;
+  }
 }
 p,
 a {
@@ -446,7 +451,19 @@ a {
     letter-spacing: 0.02em;
   }
 }
-@media all and (min-width: 1441px) {
+@media all and (min-width: 1281px) {
+  p,
+  a {
+    font-size: 2.8vw;
+  }
+}
+@media all and (min-width: 1601px) {
+  p,
+  a {
+    font-size: 2.5vw;
+  }
+}
+@media all and (min-width: 1920px) {
   p,
   a {
     font-size: 2vw;
@@ -497,11 +514,11 @@ nav {
   }
 }
 .bio {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 @media all and (min-width: 768px) {
   .bio {
-    margin-top: 5vw;
+    margin-top: 10vw;
   }
 }
 .bio p {
@@ -529,10 +546,11 @@ nav {
 .social-links a {
   display: inline-block;
   margin-bottom: 20px;
+  margin-bottom: 3.5vw;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1281px) {
   .social-links a {
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
   }
 }
 .projects-wrapper {
@@ -554,6 +572,7 @@ nav {
 .projects {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10vmin;
 }
 @media all and (min-width: 768px) {
   .projects {
@@ -614,11 +633,12 @@ nav {
   transition: border-color 300ms ease-in-out;
 }
 .project p {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .project p,
 .project p span {
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.4);
 }
 .project p .force-opaque,
 .project p span .force-opaque {
