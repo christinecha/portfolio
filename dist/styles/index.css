@@ -644,3 +644,13 @@ nav {
 .project p span .force-opaque {
   color: white;
 }
+.credit,
+.credit a {
+  font-size: 13px;
+  font-weight: 100;
+}
+.credit {
+  text-align: right;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.4);
+}
