@@ -410,6 +410,11 @@ h1 {
 }
 @media all and (min-width: 768px) {
   h1 {
+    font-size: 2vw;
+  }
+}
+@media all and (min-width: 1441px) {
+  h1 {
     font-size: 1vw;
   }
 }
@@ -419,6 +424,11 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.3em;
   opacity: 0.5;
+}
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 p,
 a {
@@ -445,6 +455,36 @@ a {
 a {
   text-decoration: none;
   border-bottom: 1px solid white;
+}
+.sidebars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+@media all and (min-width: 1441px) {
+  .sidebars {
+    display: block;
+  }
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  width: 100vh;
+  text-align: center;
+  padding-top: 1vw;
+}
+.sidebar.left {
+  left: 0;
+  transform: translate3d(-100%, 0, 0) rotateZ(-90deg);
+  transform-origin: 100% 0;
+}
+.sidebar.right {
+  right: 0;
+  transform: translate3d(100%, 0, 0) rotateZ(90deg);
+  transform-origin: 0 0;
 }
 nav {
   width: 100%;
