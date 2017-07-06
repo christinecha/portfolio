@@ -1,3 +1,54 @@
 * {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Apercu", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media @tablet { width: 90%; }
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+
+  @media @tablet { font-size: 1vw; }
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  opacity: 0.5;
+}
+
+p, a {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 1.4em;
+  letter-spacing: 0.05em;
+
+  transition: font-size 200ms ease-in-out;
+
+  @media @tablet {
+    font-size: 3vw;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+
+  @media @desktop-lg { font-size: 2vw; }
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
