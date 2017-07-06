@@ -1,6 +1,7 @@
 const Jumbler = require('./Jumbler')
 
 const $projects = Array.prototype.slice.call(document.getElementsByClassName('project'))
+const vw = window.innerWidth
 
 let $activeProject = null
 
@@ -15,6 +16,8 @@ const handleMouseLeave = (e) => {
 }
 
 const updateView = () => {
+  if (vw < 768) return
+
   projects.forEach(project => {
     const isActive = $activeProject === project.$el
 
@@ -31,17 +34,22 @@ const updateView = () => {
 }
 
 const projects = $projects.map($project => {
-  $project.addEventListener('mouseenter', handleMouseEnter)
-  $project.addEventListener('mouseleave', handleMouseLeave)
+  const project = { $el: $project }
 
-  const $title = $project.getElementsByTagName('A')[0]
-  const $body = $project.getElementsByTagName('P')[0]
+  if (vw >= 768) {
+    $project.addEventListener('mouseenter', handleMouseEnter)
+    $project.addEventListener('mouseleave', handleMouseLeave)
 
-  return {
-    $el: $project,
-    title: new Jumbler($title),
-    body: new Jumbler($body)
+    const $title = $project.getElementsByTagName('A')[0]
+    const $body = $project.getElementsByTagName('P')[0]
+
+    project.title = new Jumbler($title)
+    project.body = new Jumbler($body)
+  } else {
+    project.$el.classList.add('is-active')
   }
+
+  return project
 })
 
 updateView()
