@@ -469,6 +469,34 @@ a {
     font-size: 2vw;
   }
 }
+p .small,
+a .small {
+  font-size: 14px;
+}
+@media all and (min-width: 768px) {
+  p .small,
+  a .small {
+    font-size: 2vw;
+  }
+}
+@media all and (min-width: 1281px) {
+  p .small,
+  a .small {
+    font-size: 1.4vw;
+  }
+}
+@media all and (min-width: 1601px) {
+  p .small,
+  a .small {
+    font-size: 1.2vw;
+  }
+}
+@media all and (min-width: 1920px) {
+  p .small,
+  a .small {
+    font-size: 1vw;
+  }
+}
 a {
   text-decoration: none;
   border-bottom: 1px solid white;
