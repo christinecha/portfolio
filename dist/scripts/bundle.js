@@ -126,7 +126,7 @@
 	  _createClass(Jumbler, [{
 	    key: 'makeSpans',
 	    value: function makeSpans() {
-	      var innerHTML = this.$element.innerHTML.split('              ').join('');
+	      var innerHTML = this.$element.textContent.trim().split('              ').join('');
 	      var $children = Array.prototype.slice.call(this.$element.children);
 
 	      var _innerHTML = innerHTML;

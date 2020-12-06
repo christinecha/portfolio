@@ -471,7 +471,9 @@ a {
 }
 p .small,
 a .small {
+  display: inline-block;
   font-size: 14px;
+  line-height: 2;
 }
 @media all and (min-width: 768px) {
   p .small,

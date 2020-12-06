@@ -30,7 +30,7 @@
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^0.25.0",
     "file-loader": "^0.10.0",
-    "gulp": "^3.9.1",
+    "gulp": "4",
     "gulp-less": "^3.3.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",

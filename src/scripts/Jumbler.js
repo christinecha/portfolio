@@ -8,7 +8,7 @@ class Jumbler {
   }
 
   makeSpans() {
-    const innerHTML = this.$element.innerHTML.split('              ').join('')
+    const innerHTML = this.$element.textContent.trim().split('              ').join('')
     const $children = Array.prototype.slice.call(this.$element.children)
 
     let _innerHTML = innerHTML
@@ -28,16 +28,16 @@ class Jumbler {
     words.forEach(word => {
       let _newWordHTML = '<span>'
 
-        const chars = word.split('')
+      const chars = word.split('')
 
-        if (childrenMap[word]) {
-          console.log('hi', childrenMap[word], _newWordHTML)
-          _newWordHTML += '<span class="char">' + childrenMap[word] + '</span>'
-        } else {
-          chars.forEach(char => {
-            _newWordHTML += '<span class="char">' + char + '</span>'
-          })
-        }
+      if (childrenMap[word]) {
+        console.log('hi', childrenMap[word], _newWordHTML)
+        _newWordHTML += '<span class="char">' + childrenMap[word] + '</span>'
+      } else {
+        chars.forEach(char => {
+          _newWordHTML += '<span class="char">' + char + '</span>'
+        })
+      }
 
       _newWordHTML += '</span>'
       _newInnerHTML += _newWordHTML + '<span class="space"> </span>'
