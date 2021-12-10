@@ -5,8 +5,8 @@
   "main": "dist/index.html",
   "scripts": {
     "dev": "gulp watch",
-    "copy:assets": "cp -r ./assets ./dist",
-    "start": "yarn run copy:assets && gulp less && gulp watch & NODE_ENV=development webpack --watch --hot --progress",
+    "copy:assets": "mkdir -p dist && cp -r ./assets ./dist",
+    "start": "yarn run copy:assets && gulp less && gulp watch & NODE_ENV=development webpack serve",
     "build": "rm -rf dist && yarn run copy:assets && gulp less && webpack",
     "tunnel": "ngrok http 8080"
   },
@@ -43,10 +43,11 @@
     "less-loader": "^2.2.3",
     "ngrok": "^2.2.6",
     "path": "^0.12.7",
+    "showdown": "^1.9.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "5",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^4.6.0"
   }
 }

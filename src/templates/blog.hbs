@@ -1,0 +1,28 @@
+{{> partials/html-start.hbs }}
+
+<main>
+  {{> partials/header.hbs }}
+
+  {{#each htmlWebpackPlugin.options.posts }}
+    <section class="new">
+      <h2 style="margin-bottom: 0;">{{#each this.tags}}{{this}}{{#unless @last}} • {{/unless}}{{/each}}</h2>
+      <p style="margin-top: 10px;">
+        <a href="/blog/{{this.slug}}.html">
+          {{this.postTitle}}</a
+        >
+        <br />
+        <span class="small" style="max-width: 650px; margin-top: 20px">
+          {{this.description}}
+        </span>
+      </p>
+    </section>
+    <br />
+  {{/each}}
+
+  <br />
+  <br />
+  <br />
+  <br />
+</main>
+
+{{> partials/html-end.hbs }}

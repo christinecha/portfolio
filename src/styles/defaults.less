@@ -1,10 +1,24 @@
-* {
-  font-family: "Apercu", sans-serif;
-  color: white;
+:root {
+  --background-color: black;
+  --text-color: white;
+
+  body#blog-post {
+    --background-color: white;
+    --text-color: black;
+  }
 }
 
 body {
-  background-color: black;
+  background-color: var(--background-color);
+
+  * {
+    font-family: "Apercu", sans-serif;
+    color: var(--text-color);
+  }
+}
+
+[data-faded] {
+  opacity: 0.4;
 }
 
 main {
@@ -12,22 +26,29 @@ main {
   margin-left: auto;
   margin-right: auto;
 
-  @media @tablet { width: 90%; }
+  @media @tablet {
+    width: 90%;
+  }
 }
 
 h1 {
-  // font-size: 16px;
-  // font-weight: 300;
-  // letter-spacing: 0.08em;
-  //
-  // @media @tablet { font-size: 2vw; }
-  // @media @desktop-lg { font-size: 1vw; }
-
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.05em;
 
-  @media @desktop-xxl { font-size: 20px; }
+  @media @desktop-xxl {
+    font-size: 20px;
+  }
+
+  &[data-lg] {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+
+    @media @desktop-xxl {
+      font-size: 40px;
+    }
+  }
 }
 
 h2 {
@@ -38,17 +59,40 @@ h2 {
   opacity: 0.4;
 }
 
-
 h3 {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.1em;
 
-  @media @desktop-xl { font-size: 16px; }
-  @media @desktop-xxl { font-size: 20px; }
+  @media @desktop-xl {
+    font-size: 16px;
+  }
+  @media @desktop-xxl {
+    font-size: 20px;
+  }
 }
 
-p, a {
+.p-small() {
+  font-size: 14px;
+  line-height: 2;
+
+  @media @tablet {
+    font-size: 2vw;
+  }
+  @media @desktop {
+    font-size: 1.4vw;
+  }
+  @media @desktop-xl {
+    font-size: 1.2vw;
+  }
+  @media @desktop-xxl {
+    font-size: 1vw;
+  }
+}
+
+p,
+li,
+a {
   font-size: 22px;
   font-weight: 100;
   line-height: 1.4em;
@@ -61,23 +105,57 @@ p, a {
     font-weight: 300;
     letter-spacing: 0.02em;
   }
-  @media @desktop { font-size: 2.8vw; }
-  @media @desktop-xl { font-size: 2.5vw; }
-  @media @desktop-xxl { font-size: 2vw; }
+  @media @desktop {
+    font-size: 2.8vw;
+  }
+  @media @desktop-xl {
+    font-size: 2.5vw;
+  }
+  @media @desktop-xxl {
+    font-size: 2vw;
+  }
 
   .small {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 2;
-
-    @media @tablet { font-size: 2vw; }
-    @media @desktop { font-size: 1.4vw; }
-    @media @desktop-xl { font-size: 1.2vw; }
-    @media @desktop-xxl { font-size: 1vw; }
+    .p-small();
   }
+}
+
+.blog-post {
+  max-width: 800px;
+  margin: auto;
+
+  p,
+  li,
+  a {
+    .p-small();
+  }
+
+  blockquote {
+    margin-left: 80px;
+    padding-left: 20px;
+    border-left: 1px solid var(--text-color);
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-top: 5em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    color: blue;
+  }
+}
+
+li {
+  margin-bottom: 20px;
 }
 
 a {
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--text-color);
 }

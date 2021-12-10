@@ -1,0 +1,18 @@
+{{> partials/html-start.hbs }}
+
+<main>
+  {{> partials/header.hbs }}
+
+  <div class="blog-post">
+    <h1 data-lg>{{ htmlWebpackPlugin.options.postTitle }}</h1>
+    <p data-faded style='margin-top: 0;'>Christine Cha</p>
+    <br />
+    {{{ htmlWebpackPlugin.options.content }}}
+  </div>
+
+  <br />
+  <br />
+  <br />
+</main>
+
+{{> partials/html-end.hbs }}
