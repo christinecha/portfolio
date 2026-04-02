@@ -56,41 +56,16 @@ section {
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: -20px;
-
-  @media @tablet {
-    margin: -50px;
-  }
-
   .project {
-    margin: 20px;
-    max-width: 300px;
+    margin-bottom: 30px;
 
     @media @tablet {
-      margin: 50px;
+      margin-bottom: 40px;
     }
 
-    a {
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    p {
-      opacity: 0.5;
-      margin: 0;
-    }
-  }
-}
-
-.archive {
-  .project {
-    margin-bottom: 10px;
-
-    @media @tablet {
-      margin-bottom: 20px;
+    h2 {
+      margin-top: 5px;
+      margin-bottom: 0;
     }
 
     a {
@@ -100,10 +75,6 @@ section {
       @media @tablet {
         margin-bottom: 10px;
       }
-    }
-
-    h2 {
-      margin: 5px 0;
     }
 
     p {
