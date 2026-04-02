@@ -58,9 +58,15 @@ section {
 .projects {
   .project {
     margin-bottom: 30px;
+    transition: opacity 300ms linear, filter 300ms ease-in-out;
 
     @media @tablet {
       margin-bottom: 40px;
+    }
+
+    &.inactive {
+      opacity: 0.8;
+      filter: blur(2px);
     }
 
     h2 {

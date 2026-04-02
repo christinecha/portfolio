@@ -1,57 +1,36 @@
-const Jumbler = require("./Jumbler");
+const isTouchDevice =
+  'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0
+const $projects = Array.prototype.slice.call(document.getElementsByClassName('project'))
 
-const $projects = Array.prototype.slice.call(
-  document.getElementsByClassName("project")
-);
-const vw = window.innerWidth;
-
-let $activeProject = null;
+let $activeProject = null
 
 const handleMouseEnter = (e) => {
-  $activeProject = e.srcElement;
-  updateView();
-};
+  $activeProject = e.srcElement
+  updateView()
+}
 
 const handleMouseLeave = (e) => {
-  if ($activeProject === e.srcElement) $activeProject = null;
-  updateView();
-};
+  if ($activeProject === e.srcElement) $activeProject = null
+  updateView()
+}
 
 const updateView = () => {
-  if (vw < 768) return;
+  $projects.forEach(($project) => {
+    const isActiveProject = $activeProject === $project
 
-  projects.forEach((project) => {
-    const isActive = $activeProject === project.$el;
-
-    if (!$activeProject || isActive) {
-      project.$el.classList.add("is-active");
-      project.title.unjumble();
-      project.body.unjumble();
+    if (!!$activeProject && !isActiveProject) {
+      $project.classList.add('inactive')
     } else {
-      project.$el.classList.remove("is-active");
-      project.title.jumble();
-      project.body.jumble();
+      $project.classList.remove('inactive')
     }
-  });
-};
+  })
+}
 
 const projects = $projects.map(($project) => {
-  const project = { $el: $project };
+  if (isTouchDevice) return
 
-  // if (vw >= 768) {
-  //   $project.addEventListener("mouseenter", handleMouseEnter);
-  //   $project.addEventListener("mouseleave", handleMouseLeave);
+  $project.addEventListener('mouseenter', handleMouseEnter)
+  $project.addEventListener('mouseleave', handleMouseLeave)
+})
 
-  //   const $title = $project.getElementsByTagName("A")[0];
-  //   const $body = $project.getElementsByTagName("P")[0];
-
-  //   project.title = new Jumbler($title);
-  //   project.body = new Jumbler($body);
-  // } else {
-  project.$el.classList.add("is-active");
-  // }
-
-  return project;
-});
-
-updateView();
+updateView()
