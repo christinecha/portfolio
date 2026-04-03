@@ -5,6 +5,7 @@ const $projects = Array.prototype.slice.call(document.getElementsByClassName('pr
 let $activeProject = null
 
 const handleMouseEnter = (e) => {
+  console.log('debug', e)
   $activeProject = e.srcElement
   updateView()
 }

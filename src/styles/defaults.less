@@ -3,6 +3,47 @@
   --text-color: white;
 }
 
+.type-label() {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.type-body-m() {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+
+  @media @tablet {
+    font-size: 28px;
+  }
+  @media @desktop-lg {
+    font-size: 35px;
+  }
+}
+
+.type-body-s() {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+
+  @media @desktop-xxl {
+    font-size: 20px;
+  }
+
+  &[data-lg] {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+
+    @media @desktop-xxl {
+      font-size: 40px;
+    }
+  }
+}
+
 body {
   background-color: var(--background-color);
 
@@ -26,84 +67,29 @@ main {
   }
 }
 
-h1 {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+h1,
+[data-body-s] {
+  .type-body-s();
+}
 
-  @media @desktop-xxl {
-    font-size: 20px;
-  }
-
-  &[data-lg] {
-    font-size: 30px;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-
-    @media @desktop-xxl {
-      font-size: 40px;
-    }
-  }
+h2,
+label,
+[data-label] {
+  .type-label();
 }
 
 h2 {
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  opacity: 0.4;
-}
-
-h3 {
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-
-  @media @desktop-xl {
-    font-size: 16px;
-  }
-  @media @desktop-xxl {
-    font-size: 20px;
-  }
-}
-
-.p-small() {
-  font-size: 16px;
-  line-height: 1.4em;
-
-  @media @tablet {
-    font-size: 18px;
-  }
-  @media @desktop-lg {
-    font-size: 24px;
-  }
+  opacity: 0.6;
 }
 
 p,
 li,
-a {
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 1.4em;
-  letter-spacing: 0.02em;
-
-  @media @tablet {
-    font-size: 28px;
-  }
-  @media @desktop-lg {
-    font-size: 35px;
-  }
-
-  &.small {
-    .p-small();
-  }
-}
-
-li {
-  margin-bottom: 20px;
+[data-body-m] {
+  .type-body-m();
 }
 
 a {
+  color: inherit;
   text-decoration: none;
   border-bottom: 1px solid var(--text-color);
 }

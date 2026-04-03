@@ -81,24 +81,27 @@ section {
       @media @tablet {
         margin-bottom: 10px;
       }
+
+      &[data-label] {
+        margin-top: 8px;
+        border-bottom: none;
+
+        @media @tablet {
+          margin-top: 10px;
+        }
+      }
     }
 
     p {
-      opacity: 0.5;
+      opacity: 0.6;
       margin: 0;
     }
   }
 }
 
 
-.credit,
-.credit a {
-  font-size: 13px;
-  font-weight: 100;
-}
-
 .credit {
   text-align: right;
   margin-bottom: 50px;
-  color: rgba(255, 255, 255, 0.4);
+  opacity: 0.6;
 }
